@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">IEEB_Building</string>
+    <string name="app_name">資訊電機館導覽</string>
+    <string name="main_activity_tx1">資訊電機館導覽</string>
 </resources>
