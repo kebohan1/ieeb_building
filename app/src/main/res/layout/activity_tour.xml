@@ -6,4 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".tourActivity">
 
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="576dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:layout_gravity="center"
+            android:text="樓層分布"
+            android:textSize="36sp" />
+
+        <ImageButton
+            android:id="@+id/5_floor_imageButton"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:layout_gravity="left"
+            app:srcCompat="@android:drawable/editbox_background" />
+
+        <ImageButton
+            android:id="@+id/4_floor_imageButton2"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:layout_gravity="right"
+            app:srcCompat="@android:drawable/editbox_background" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

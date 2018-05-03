@@ -37,39 +37,39 @@
             android:textSize="30sp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/tour_button"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="分頁導覽" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/introduction_button"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="本館簡介" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/office_button"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="教師辦公室" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/facility_button"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="其他相關設施" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
