@@ -94,4 +94,10 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_scrollingintroductionphoto">ScrollingintroductionphotoActivity
     </string>
+    <string name="title_activity_history_scrolling">HistoryScrollingActivity</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="title_activity_department_scrolling">DepartmentScrollingActivity</string>
+    <string name="title_activity_department_detail_scrolling">Department_detailScrollingActivity
+    </string>
+    <string name="title_activity_dean__scrolling">Dean_ScrollingActivity</string>
 </resources>

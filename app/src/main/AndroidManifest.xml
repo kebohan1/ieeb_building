@@ -23,7 +23,23 @@
             android:name=".ScrollingintroductionphotoActivity"
             android:label="@string/title_activity_scrollingintroductionphoto"
             android:theme="@style/AppTheme" />
-        <activity android:name=".Introduction_detalActivity"></activity>
+        <activity android:name=".Introduction_detalActivity" />
+        <activity
+            android:name=".HistoryScrollingActivity"
+            android:label="@string/title_activity_history_scrolling"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DepartmentScrollingActivity"
+            android:label="@string/title_activity_department_scrolling"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Department_detailScrollingActivity"
+            android:label="@string/title_activity_department_detail_scrolling"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Dean_ScrollingActivity"
+            android:label="@string/title_activity_dean__scrolling"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
