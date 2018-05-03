@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Floor_tourActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="576dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/floor_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/floor_name_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="資電館2F"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/floordetile_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="主要系所:資訊工程學系\n系辦位置:"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/map_imageView"
+            android:layout_width="296dp"
+            android:layout_height="356dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@android:drawable/screen_background_dark_transparent" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

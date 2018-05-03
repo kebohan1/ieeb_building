@@ -3,11 +3,11 @@ package com.tw.taichung.joonkuiliew.ieeb_building;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class TourActivity extends AppCompatActivity {
+public class Floor_tourActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tour);
+        setContentView(R.layout.activity_floor_tour);
     }
 }

@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".tourActivity"></activity>
+        <activity android:name=".tourActivity" />
+        <activity android:name=".Floor_tourActivity"></activity>
     </application>
 
 </manifest>
