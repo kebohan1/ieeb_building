@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ScrollingintroductionphotoActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@android:color/background_light"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/Scroll_title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="相關圖片"
+            android:textSize="36sp" />
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        layout="@layout/content_scrollingintroductionphoto"
+        android:layout_marginTop="60dp" />
+
+</android.support.design.widget.CoordinatorLayout>
