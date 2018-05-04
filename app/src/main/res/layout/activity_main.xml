@@ -43,7 +43,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
-            android:text="分頁導覽" />
+            android:text="@string/bt_diffrent_layer" />
 
         <Button
             android:id="@+id/introduction_button"
@@ -52,7 +52,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:text="本館簡介" />
+            android:text="@string/bt_introduction_main" />
 
         <Button
             android:id="@+id/office_button"
@@ -61,7 +61,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:text="教師辦公室" />
+            android:text="@string/bt_office" />
 
         <Button
             android:id="@+id/facility_button"
@@ -70,6 +70,6 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:text="其他相關設施" />
+            android:text="@string/bt_other_facility" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

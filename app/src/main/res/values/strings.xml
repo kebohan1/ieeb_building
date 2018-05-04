@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">資訊電機館導覽</string>
+    <!--主頁面-->
     <string name="main_activity_tx1">資訊電機館導覽</string>
+    <string name="bt_diffrent_layer">分層導覽</string>
+    <string name="bt_introduction_main">本館簡介</string>
+    <string name="bt_office">教師辦公室</string>
+    <string name="bt_other_facility">其他相關設施</string>
     <string name="title_activity_scrolling_detail_">Scrolling_detail_Activity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
