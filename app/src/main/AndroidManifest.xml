@@ -39,7 +39,9 @@
         <activity
             android:name=".Dean_ScrollingActivity"
             android:label="@string/title_activity_dean__scrolling"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".OtherFacilityActivity" />
+        <activity android:name=".OfficeActivity"></activity>
     </application>
 
 </manifest>
