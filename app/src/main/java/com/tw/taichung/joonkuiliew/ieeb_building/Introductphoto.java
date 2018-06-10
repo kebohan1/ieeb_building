@@ -4,6 +4,11 @@ public class Introductphoto {
     String title;
     int imgid;
 
+    public Introductphoto(String title, int imgid) {
+        this.title = title;
+        this.imgid = imgid;
+    }
+
     public String getTitle() {
         return title;
     }
