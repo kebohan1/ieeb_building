@@ -7,18 +7,18 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button TourButton;//分層簡介按鈕
-    private Button IntroductionButton;
-    private Button OfficeButton;
-    private Button FacilityButton;
+    private Button tourButton;//分層簡介按鈕
+    private Button introductionButton;
+    private Button officeButton;
+    private Button facilityButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TourButton = (Button) findViewById(R.id.tour_button);
-        TourButton.setOnClickListener(new View.OnClickListener() {
+        tourButton = findViewById(R.id.tour_button);
+        tourButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        IntroductionButton = (Button) findViewById(R.id.introduction_button);
-        IntroductionButton.setOnClickListener(new View.OnClickListener() {
+        introductionButton = (Button) findViewById(R.id.introduction_button);
+        introductionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        OfficeButton = (Button) findViewById(R.id.office_button);
-        OfficeButton.setOnClickListener(new View.OnClickListener() {
+        officeButton = (Button) findViewById(R.id.office_button);
+        officeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        FacilityButton = (Button) findViewById(R.id.facility_button);
-        FacilityButton.setOnClickListener(new View.OnClickListener() {
+        facilityButton = (Button) findViewById(R.id.facility_button);
+        facilityButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();

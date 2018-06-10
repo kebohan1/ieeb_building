@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 public class TourActivity extends AppCompatActivity {
@@ -35,7 +34,7 @@ public class TourActivity extends AppCompatActivity {
 
         floor_imageButton1 = findViewById(R.id.floor_imageButton1);
         //還沒有圖片 底下那行為圖片設置程式碼
-       // floor_imageButton1.setImageResource(R.drawable.firefox);
+        // floor_imageButton1.setImageResource(R.drawable.firefox);
         floor_imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,7 +86,7 @@ public class TourActivity extends AppCompatActivity {
 
         floor_imageButton5 = findViewById(R.id.floor_imageButton5);
         //還沒有圖片 底下那行為圖片設置程式碼
-        // floor_imageButton5.setImageResource(R.drawable.firefox);
+//        floor_imageButton5.setImageResource(R.drawable.ic_launcher_background);
         floor_imageButton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

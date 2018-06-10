@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tourActivity">
+    tools:context=".TourActivity">
 
     <LinearLayout
         android:layout_width="368dp"
@@ -14,64 +14,62 @@
         tools:layout_editor_absoluteY="8dp">
 
         <TextView
-            android:id="@+id/textView_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:id="@+id/textView_tour_title"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:gravity="center"
             android:text="樓層分布"
-            android:textSize="36sp" />
+            android:textSize="40sp" />
 
         <ImageButton
             android:id="@+id/floor_imageButton5"
-            android:layout_width="189dp"
-            android:layout_height="44dp"
-            android:layout_gravity="left"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="50dp"
-            app:srcCompat="@android:drawable/editbox_background" />
+            app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
 
         <ImageButton
             android:id="@+id/floor_imageButton4"
             android:layout_width="189dp"
             android:layout_height="44dp"
             android:layout_gravity="right"
+            android:layout_marginRight="20dp"
             android:layout_marginTop="30dp"
-            app:srcCompat="@android:drawable/editbox_background" />
+            app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
 
         <ImageButton
             android:id="@+id/floor_imageButton3"
             android:layout_width="189dp"
             android:layout_height="44dp"
-            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
-            app:srcCompat="@android:drawable/editbox_background"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="251dp" />
+            app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
 
         <ImageButton
             android:id="@+id/floor_imageButton2"
             android:layout_width="189dp"
             android:layout_height="44dp"
             android:layout_gravity="right"
+            android:layout_marginRight="20dp"
             android:layout_marginTop="30dp"
-            app:srcCompat="@android:drawable/editbox_background"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="251dp" />
+            app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
 
         <ImageButton
             android:id="@+id/floor_imageButton1"
             android:layout_width="189dp"
             android:layout_height="44dp"
-            android:layout_gravity="left"
-            android:layout_marginTop="30dp"
-            app:srcCompat="@android:drawable/editbox_background" />
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="26dp"
+            app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
 
         <ImageButton
             android:id="@+id/floor_imageButtonB1"
             android:layout_width="189dp"
             android:layout_height="44dp"
             android:layout_gravity="right"
-            android:layout_marginTop="30dp"
-            android:src="@android:drawable/editbox_background_normal" />
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

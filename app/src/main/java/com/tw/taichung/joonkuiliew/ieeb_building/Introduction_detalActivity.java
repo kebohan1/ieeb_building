@@ -25,8 +25,9 @@ public class Introduction_detalActivity extends AppCompatActivity {
         setContentView(R.layout.activity_introduction_detal);
 
         //Catch item num
-        Intent intent = new Intent();
+        Intent intent = this.getIntent();
         now_num = intent.getIntExtra("now_num", 0);
+        Log.v("Now Item Num",String.valueOf(now_num));
 
         //var declare
         imageView_detal = findViewById(R.id.imageView_detal);

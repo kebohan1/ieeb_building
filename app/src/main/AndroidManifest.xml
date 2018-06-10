@@ -42,6 +42,7 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".OtherFacilityActivity" />
         <activity android:name=".OfficeActivity" />
+        <activity android:name=".TourActivity"></activity>
     </application>
 
 </manifest>

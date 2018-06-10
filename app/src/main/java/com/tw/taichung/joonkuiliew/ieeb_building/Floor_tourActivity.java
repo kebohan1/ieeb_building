@@ -3,6 +3,7 @@ package com.tw.taichung.joonkuiliew.ieeb_building;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -24,8 +25,9 @@ public class Floor_tourActivity extends AppCompatActivity {
         floordetile_textView = findViewById(R.id.floordetile_textView);
 
         //get choice floor
-        Intent intent = new Intent();
+        Intent intent = this.getIntent();
         int now_floor = intent.getIntExtra("floor_key",0);
+        Log.v("Now Floor Num Check", String.valueOf(now_floor));
 
         //select action
         switch (now_floor){
