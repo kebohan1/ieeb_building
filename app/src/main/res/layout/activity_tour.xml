@@ -23,7 +23,7 @@
             android:textSize="36sp" />
 
         <ImageButton
-            android:id="@+id/5_floor_imageButton"
+            android:id="@+id/floor_imageButton5"
             android:layout_width="189dp"
             android:layout_height="44dp"
             android:layout_gravity="left"
@@ -31,7 +31,7 @@
             app:srcCompat="@android:drawable/editbox_background" />
 
         <ImageButton
-            android:id="@+id/4_floor_imageButton"
+            android:id="@+id/floor_imageButton4"
             android:layout_width="189dp"
             android:layout_height="44dp"
             android:layout_gravity="right"
@@ -39,7 +39,7 @@
             app:srcCompat="@android:drawable/editbox_background" />
 
         <ImageButton
-            android:id="@+id/3_floor_imageButton"
+            android:id="@+id/floor_imageButton3"
             android:layout_width="189dp"
             android:layout_height="44dp"
             android:layout_gravity="left"
@@ -49,7 +49,7 @@
             tools:layout_editor_absoluteY="251dp" />
 
         <ImageButton
-            android:id="@+id/2_floor_imageButton"
+            android:id="@+id/floor_imageButton2"
             android:layout_width="189dp"
             android:layout_height="44dp"
             android:layout_gravity="right"
@@ -59,7 +59,7 @@
             tools:layout_editor_absoluteY="251dp" />
 
         <ImageButton
-            android:id="@+id/5_floor_imageButton3"
+            android:id="@+id/floor_imageButton1"
             android:layout_width="189dp"
             android:layout_height="44dp"
             android:layout_gravity="left"

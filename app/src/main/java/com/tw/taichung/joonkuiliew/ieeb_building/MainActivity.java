@@ -11,19 +11,22 @@ public class MainActivity extends AppCompatActivity {
     private Button IntroductionButton;
     private Button OfficeButton;
     private Button FacilityButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         TourButton = (Button) findViewById(R.id.tour_button);
         TourButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this,Floor_tourActivity.class);
+                intent.setClass(MainActivity.this,TourActivity.class);
                 startActivity(intent);
             }
         });
+
         IntroductionButton = (Button) findViewById(R.id.introduction_button);
         IntroductionButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         OfficeButton = (Button) findViewById(R.id.office_button);
         OfficeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         FacilityButton = (Button) findViewById(R.id.facility_button);
         FacilityButton.setOnClickListener(new View.OnClickListener() {
             @Override
