@@ -25,6 +25,7 @@ public class ScrollingintroductionphotoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introduction_photoscrolling);
 
+        //Class Introductphoto 建構值沒給Night Image時 會自動將白天imgid導入夜間模式的imgid
         //測試項目
         Introductphoto test = new Introductphoto("電梯間",R.drawable.ic_launcher_background);
         introductphotolist.add(test);
