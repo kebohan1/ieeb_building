@@ -52,7 +52,7 @@ public class DepartmentScrollingActivity extends AppCompatActivity {
         });
     }
 
-    //相關圖片listView的adapter
+    //listView的adapter
     class DepartmentArrayAdapter extends ArrayAdapter<Department> {
         Context context;
 
