@@ -31,7 +31,7 @@ public class DepartmentScrollingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_department_scrolling);
 
         //測試項目
-        Department test = new Department("資訊工程學系",R.drawable.ic_launcher_background,test_str);
+        Department test = new Department("資工學系",R.drawable.ic_launcher_background,test_str);
         departmentlist.add(test);
 
         //listView建置
@@ -75,9 +75,9 @@ public class DepartmentScrollingActivity extends AppCompatActivity {
 
             Department item = (Department) getItem(position);
             TextView tv_title = (TextView) itemlayout.findViewById(R.id.textView_dep_title);
-            tv_title.setText(item.title);
+            tv_title.setText(item.getTitle());
             ImageView iv = (ImageView) itemlayout.findViewById(R.id.imageView_dep_photo);
-            iv.setImageResource(item.imgid);
+            iv.setImageResource(item.getImgid());
             return itemlayout;
         }
     }

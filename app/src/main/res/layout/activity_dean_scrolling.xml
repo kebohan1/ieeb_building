@@ -21,7 +21,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/Dean_imageView"
+                android:id="@+id/dean_imageView"
                 android:layout_width="253dp"
                 android:layout_height="176dp"
                 android:layout_weight="1"
@@ -34,7 +34,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/Dean_TextView"
+                    android:id="@+id/dean_TextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
@@ -43,7 +43,7 @@
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/Dean_Name"
+                    android:id="@+id/dean_Name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"

@@ -1,9 +1,9 @@
 package com.tw.taichung.joonkuiliew.ieeb_building;
 
 public class Department {
-    String title;
-    int imgid;
-    String introduct_dep;
+    private String title;
+    private int imgid;
+    private String introduct_dep;
 
     public Department(String title, int imgid) {
         this.title = title;

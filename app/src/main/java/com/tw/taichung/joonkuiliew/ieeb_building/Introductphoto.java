@@ -1,9 +1,9 @@
 package com.tw.taichung.joonkuiliew.ieeb_building;
 
 public class Introductphoto {
-    String title;
-    int imgid;
-    int imgid_night;
+    private String title;
+    private int imgid;
+    private int imgid_night;
 
     public Introductphoto(String title, int imgid) {
         this.title = title;

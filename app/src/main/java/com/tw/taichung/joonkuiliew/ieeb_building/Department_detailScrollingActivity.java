@@ -36,7 +36,11 @@ public class Department_detailScrollingActivity extends AppCompatActivity {
         departmentlist = DepartmentScrollingActivity.departmentlist;
         Department now = departmentlist.get(now_num);
 
-        //text set
+        //image text(title) set
+        department_detail_imageView.setImageResource(now.getImgid());
+        department_detail_textView.setText(now.getTitle());
+
+        //text set(content)
         dep_content = findViewById(R.id.dep_content);
         dep_content.setText(now.getIntroduct_dep());
     }

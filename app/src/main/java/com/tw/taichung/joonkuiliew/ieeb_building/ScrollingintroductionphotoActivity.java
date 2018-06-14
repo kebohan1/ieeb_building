@@ -71,9 +71,9 @@ public class ScrollingintroductionphotoActivity extends AppCompatActivity {
 
             Introductphoto item = (Introductphoto)getItem(position);
             TextView tv_title = (TextView)itemlayout.findViewById(R.id.introduct_photo_lv_text);
-            tv_title.setText(item.title);
+            tv_title.setText(item.getTitle());
             ImageView iv = (ImageView)itemlayout.findViewById(R.id.introduct_photo_lv_image);
-            iv.setImageResource(item.imgid);
+            iv.setImageResource(item.getImgid());
             return itemlayout;
         }
     }

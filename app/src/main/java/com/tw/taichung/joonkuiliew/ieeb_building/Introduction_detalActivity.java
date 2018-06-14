@@ -37,8 +37,8 @@ public class Introduction_detalActivity extends AppCompatActivity {
         Introductphoto now = introductphotolist.get(now_num);
 
         //set image and title text
-        introduction_detail_textView.setText(now.title);
-        imageView_detal.setImageResource(now.imgid);
+        introduction_detail_textView.setText(now.getTitle());
+        imageView_detal.setImageResource(now.getImgid());
 
         //set nightmode_switch listener
         nightmode_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -49,11 +49,11 @@ public class Introduction_detalActivity extends AppCompatActivity {
                 if(compoundButton.isChecked()){
                     Log.v("Switch_test","Open >_<");
                     Toast.makeText(Introduction_detalActivity.this,"Open Night Mode",Toast.LENGTH_SHORT).show();
-                    imageView_detal.setImageResource(now.imgid_night);
+                    imageView_detal.setImageResource(now.getImgid_night());
                 } else{
                     Log.v("Switch_test","Close!!!!");
                     Toast.makeText(Introduction_detalActivity.this,"Close Night Mode",Toast.LENGTH_SHORT).show();
-                    imageView_detal.setImageResource(now.imgid);
+                    imageView_detal.setImageResource(now.getImgid());
                 }
             }
         });
