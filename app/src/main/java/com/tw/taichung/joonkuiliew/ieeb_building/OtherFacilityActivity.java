@@ -23,15 +23,15 @@ public class OtherFacilityActivity extends AppCompatActivity {
         setContentView(R.layout.activity_other_facility);
 
         // var dealer
-        facility = (Spinner)findViewById(R.id.facility_spinner);
-        floor  =  (Spinner)findViewById(R.id.facility_spinner);
-        facility_img_map = (ImageView)findViewById(R.id.facility_imageView);
+        facility = (Spinner) findViewById(R.id.facility_spinner);
+        floor = (Spinner) findViewById(R.id.floor_spinner);
+        facility_img_map = (ImageView) findViewById(R.id.facility_imageView);
 
         //set text in spinner
-        ArrayAdapter<String> facilityList = new ArrayAdapter<>(OtherFacilityActivity.this,R.layout.activity_other_facility,facility_item);
-        facility.setAdapter(facilityList);
-        ArrayAdapter<String> floorList = new ArrayAdapter<>(OtherFacilityActivity.this,R.layout.activity_other_facility,floor_item);
-        floor.setAdapter(floorList);
+        ArrayAdapter<String> facilityAdapter = new ArrayAdapter<>(OtherFacilityActivity.this, R.layout.support_simple_spinner_dropdown_item, facility_item);
+        facility.setAdapter(facilityAdapter);
+        ArrayAdapter<String> floorAdapter = new ArrayAdapter<>(OtherFacilityActivity.this, R.layout.support_simple_spinner_dropdown_item, floor_item);
+        floor.setAdapter(floorAdapter);
 
         //spinner select Listener
         facility.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -59,29 +59,29 @@ public class OtherFacilityActivity extends AppCompatActivity {
         });
 
         //imageView Set
-        if(select_facility.equals(facility_item[0])){
-            switch (select_floor){
-                case 0:
-                    //facility_img_map.setImageResource();
-                    break;
-                case 1:
-                    //facility_img_map.setImageResource();
-                    break;
-                case 2:
-                    //facility_img_map.setImageResource();
-                    break;
-                case 3:
-                    //facility_img_map.setImageResource();
-                    break;
-                case 4:
-                    //facility_img_map.setImageResource();
-                    break;
-                case 5:
-                    //facility_img_map.setImageResource();
-                    break;
+        if (select_facility != null) {
+            if (select_facility.equals(facility_item[0])) {
+                switch (select_floor) {
+                    case 0:
+                        //facility_img_map.setImageResource();
+                        break;
+                    case 1:
+                        //facility_img_map.setImageResource();
+                        break;
+                    case 2:
+                        //facility_img_map.setImageResource();
+                        break;
+                    case 3:
+                        //facility_img_map.setImageResource();
+                        break;
+                    case 4:
+                        //facility_img_map.setImageResource();
+                        break;
+                    case 5:
+                        //facility_img_map.setImageResource();
+                        break;
+                }
             }
-
         }
-
     }
 }
