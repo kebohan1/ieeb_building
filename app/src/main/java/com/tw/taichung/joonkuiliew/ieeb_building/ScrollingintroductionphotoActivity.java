@@ -2,6 +2,8 @@ package com.tw.taichung.joonkuiliew.ieeb_building;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
@@ -69,6 +71,12 @@ public class ScrollingintroductionphotoActivity extends AppCompatActivity {
         Introductphoto west_door = new Introductphoto("資電學院西門",R.drawable.west_door);
         introductphotolist.add(west_door);
 
+        //for arraylist
+        for(int i = 0;i<introductphotolist.size();i++){
+            Introductphoto now = introductphotolist.get(i);
+            now.setYourBitmap(resized(now.getImgid()));
+        }
+
         //listView建置
         aboutphotoadapter = new IntroductphotoArrayAdapter(this,introductphotolist);
         ls_photo = (ListView)findViewById(R.id.listView_about_photo);
@@ -85,6 +93,11 @@ public class ScrollingintroductionphotoActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    Bitmap resized(int id){
+        Bitmap yourBitmap = BitmapFactory.decodeResource(getResources(),id);
+        Bitmap resized = Bitmap.createScaledBitmap(yourBitmap, 320, 320, true);
+        return resized;
     }
 
     //相關圖片listView的adapter
@@ -112,7 +125,9 @@ public class ScrollingintroductionphotoActivity extends AppCompatActivity {
             TextView tv_title = (TextView)itemlayout.findViewById(R.id.introduct_photo_lv_text);
             tv_title.setText(item.getTitle());
             ImageView iv = (ImageView)itemlayout.findViewById(R.id.introduct_photo_lv_image);
-            iv.setImageResource(item.getImgid());
+//            Bitmap yourBitmap = BitmapFactory.decodeResource(getResources(),item.getImgid());
+//            Bitmap resized = Bitmap.createScaledBitmap(yourBitmap, 320, 320, true);
+            iv.setImageBitmap(item.getYourBitmap());
             return itemlayout;
         }
     }

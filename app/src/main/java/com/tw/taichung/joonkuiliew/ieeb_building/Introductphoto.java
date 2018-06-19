@@ -1,9 +1,12 @@
 package com.tw.taichung.joonkuiliew.ieeb_building;
 
+import android.graphics.Bitmap;
+
 public class Introductphoto {
     private String title;
     private int imgid;
     private int imgid_night;
+    private Bitmap yourBitmap;
 
     public Introductphoto(String title, int imgid) {
         this.title = title;
@@ -15,6 +18,14 @@ public class Introductphoto {
         this.title = title;
         this.imgid = imgid;
         this.imgid_night = imgid_night;
+    }
+
+    public Bitmap getYourBitmap() {
+        return yourBitmap;
+    }
+
+    public void setYourBitmap(Bitmap yourBitmap) {
+        this.yourBitmap = yourBitmap;
     }
 
     public int getImgid_night() {
