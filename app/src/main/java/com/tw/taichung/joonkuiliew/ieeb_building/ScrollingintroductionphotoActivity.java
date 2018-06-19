@@ -25,10 +25,49 @@ public class ScrollingintroductionphotoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introduction_photoscrolling);
 
+        //clear
+        introductphotolist.clear();
+
         //Class Introductphoto 建構值沒給Night Image時 會自動將白天imgid導入夜間模式的imgid
-        //測試項目
-        Introductphoto test = new Introductphoto("電梯間",R.drawable.ic_launcher_background);
-        introductphotolist.add(test);
+        //add項目
+        Introductphoto college_of_information_office = new Introductphoto("資電學院辦公室",R.drawable.college_of_information_office);
+        introductphotolist.add(college_of_information_office);
+        Introductphoto electrical_engineering_office = new Introductphoto("電機工程學系辦公室",R.drawable.electrical_engineering_office);
+        introductphotolist.add(electrical_engineering_office);
+        Introductphoto information_engineering_office = new Introductphoto("資訊工程學系辦公室",R.drawable.information_engineering_office,R.drawable.information_engineering_office_2);
+        introductphotolist.add(information_engineering_office);
+        Introductphoto center_chinese = new Introductphoto("國語文中心",R.drawable.center_chinese,R.drawable.center_chinese_2);
+        introductphotolist.add(center_chinese);
+        Introductphoto language_center = new Introductphoto("外語言中心",R.drawable.language_center,R.drawable.language_center_2);
+        introductphotolist.add(language_center);
+        Introductphoto language_self_stydy_center = new Introductphoto("語言自學中心",R.drawable.language_self_stydy_center);
+        introductphotolist.add(language_self_stydy_center);
+        Introductphoto b22 = new Introductphoto("B22視聽室",R.drawable.b22,R.drawable.b22_2);
+        introductphotolist.add(b22);
+        Introductphoto classroom = new Introductphoto("教室",R.drawable.classroom,R.drawable.classroom_2);
+        introductphotolist.add(classroom);
+        Introductphoto corridor_1_floor = new Introductphoto("一樓走廊",R.drawable.corridor_1_floor);
+        introductphotolist.add(corridor_1_floor);
+        Introductphoto hall = new Introductphoto("一樓穿堂",R.drawable.hall,R.drawable.hall_2);
+        introductphotolist.add(hall);
+        Introductphoto engine_room = new Introductphoto("QOIT機房",R.drawable.engine_room,R.drawable.engine_room_3);
+        introductphotolist.add(engine_room);
+        Introductphoto g_print = new Introductphoto("G  Print",R.drawable.g_print);
+        introductphotolist.add(g_print);
+        Introductphoto international_room_3rd = new Introductphoto("第三國際會議廳",R.drawable.international_room_3rd);
+        introductphotolist.add(international_room_3rd);
+        Introductphoto elevator = new Introductphoto("電梯間",R.drawable.elevator,R.drawable.elevator_2);
+        introductphotolist.add(elevator);
+        Introductphoto east_door = new Introductphoto("資電學院東門",R.drawable.east_door);
+        introductphotolist.add(east_door);
+        Introductphoto main_sign_south_door = new Introductphoto("資電學院南門",R.drawable.main_sign_south_door,R.drawable.main_sign_south_door_2);
+        introductphotolist.add(main_sign_south_door);
+        Introductphoto north_door = new Introductphoto("資電學院北門",R.drawable.north_door,R.drawable.north_door_2);
+        introductphotolist.add(north_door);
+        Introductphoto obstacle_free_passageway = new Introductphoto("資電學院南門-無障礙通道",R.drawable.obstacle_free_passageway);
+        introductphotolist.add(obstacle_free_passageway);
+        Introductphoto west_door = new Introductphoto("資電學院西門",R.drawable.west_door);
+        introductphotolist.add(west_door);
 
         //listView建置
         aboutphotoadapter = new IntroductphotoArrayAdapter(this,introductphotolist);

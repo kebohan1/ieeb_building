@@ -7,7 +7,7 @@
     <ImageView
         android:id="@+id/introduct_photo_lv_image"
         android:layout_width="59dp"
-        android:layout_height="55dp"
+        android:layout_height="92dp"
         android:layout_weight="1"
         android:contentDescription="TODO"
         app:srcCompat="@android:drawable/sym_def_app_icon" />
@@ -15,7 +15,7 @@
     <TextView
         android:id="@+id/introduct_photo_lv_text"
         android:layout_width="wrap_content"
-        android:layout_height="54dp"
+        android:layout_height="91dp"
         android:layout_weight="1"
         android:gravity="center"
         android:text="TextView" />

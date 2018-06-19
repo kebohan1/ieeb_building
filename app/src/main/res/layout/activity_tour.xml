@@ -23,53 +23,53 @@
 
         <ImageButton
             android:id="@+id/floor_imageButton5"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
+            android:layout_width="189dp"
+            android:layout_height="65dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
 
         <ImageButton
             android:id="@+id/floor_imageButton4"
             android:layout_width="189dp"
-            android:layout_height="44dp"
+            android:layout_height="65dp"
             android:layout_gravity="right"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
 
         <ImageButton
             android:id="@+id/floor_imageButton3"
             android:layout_width="189dp"
-            android:layout_height="44dp"
+            android:layout_height="65dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
 
         <ImageButton
             android:id="@+id/floor_imageButton2"
             android:layout_width="189dp"
-            android:layout_height="44dp"
+            android:layout_height="65dp"
             android:layout_gravity="right"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
 
         <ImageButton
             android:id="@+id/floor_imageButton1"
             android:layout_width="189dp"
-            android:layout_height="44dp"
+            android:layout_height="65dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="26dp"
+            android:layout_marginTop="10dp"
             app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
 
         <ImageButton
             android:id="@+id/floor_imageButtonB1"
             android:layout_width="189dp"
-            android:layout_height="44dp"
+            android:layout_height="65dp"
             android:layout_gravity="right"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

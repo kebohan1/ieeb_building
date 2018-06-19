@@ -38,7 +38,13 @@ public class Introduction_detalActivity extends AppCompatActivity {
 
         //set image and title text
         introduction_detail_textView.setText(now.getTitle());
+        introduction_detail_textView.setTextColor(0xff000000);
         imageView_detal.setImageResource(now.getImgid());
+
+        //如果Img=nightImg => disable switch
+        if(now.getImgid()==now.getImgid_night()){
+            nightmode_switch.setEnabled(false);
+        }
 
         //set nightmode_switch listener
         nightmode_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

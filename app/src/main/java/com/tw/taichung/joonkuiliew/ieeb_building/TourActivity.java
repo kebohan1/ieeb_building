@@ -21,7 +21,7 @@ public class TourActivity extends AppCompatActivity {
 
         floor_imageButtonB1 = findViewById(R.id.floor_imageButtonB1);
         //還沒有圖片 底下那行為圖片設置程式碼
-        // floor_imageButtonB1.setImageResource(R.drawable.firefox);
+        floor_imageButtonB1.setImageResource(R.drawable.b1);
         floor_imageButtonB1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,7 +34,7 @@ public class TourActivity extends AppCompatActivity {
 
         floor_imageButton1 = findViewById(R.id.floor_imageButton1);
         //還沒有圖片 底下那行為圖片設置程式碼
-        // floor_imageButton1.setImageResource(R.drawable.firefox);
+        floor_imageButton1.setImageResource(R.drawable.first);
         floor_imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +47,7 @@ public class TourActivity extends AppCompatActivity {
 
         floor_imageButton2 = findViewById(R.id.floor_imageButton2);
         //還沒有圖片 底下那行為圖片設置程式碼
-        // floor_imageButton2.setImageResource(R.drawable.firefox);
+        floor_imageButton2.setImageResource(R.drawable.sed);
         floor_imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,7 +60,7 @@ public class TourActivity extends AppCompatActivity {
 
         floor_imageButton3 = findViewById(R.id.floor_imageButton3);
         //還沒有圖片 底下那行為圖片設置程式碼
-        // floor_imageButton3.setImageResource(R.drawable.firefox);
+        floor_imageButton3.setImageResource(R.drawable.third);
         floor_imageButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -73,7 +73,7 @@ public class TourActivity extends AppCompatActivity {
 
         floor_imageButton4 = findViewById(R.id.floor_imageButton4);
         //還沒有圖片 底下那行為圖片設置程式碼
-        // floor_imageButton4.setImageResource(R.drawable.firefox);
+        floor_imageButton4.setImageResource(R.drawable.four);
         floor_imageButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,7 +86,7 @@ public class TourActivity extends AppCompatActivity {
 
         floor_imageButton5 = findViewById(R.id.floor_imageButton5);
         //還沒有圖片 底下那行為圖片設置程式碼
-//        floor_imageButton5.setImageResource(R.drawable.ic_launcher_background);
+        floor_imageButton5.setImageResource(R.drawable.fif);
         floor_imageButton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

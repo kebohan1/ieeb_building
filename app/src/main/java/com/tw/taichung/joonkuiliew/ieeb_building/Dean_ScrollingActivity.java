@@ -24,11 +24,12 @@ public class Dean_ScrollingActivity extends AppCompatActivity {
 
         //image set
         //沒有設定照片(No Photo)
-        //dean_imageView.setImageResource(R.id.);
+        dean_imageView.setImageResource(R.drawable.dean);
 
         //text set (content)
         content_dean = findViewById(R.id.content_dean);
         content_dean.setText(dean_content);
+        content_dean.setTextColor(0xff000000);
 
     }
 }

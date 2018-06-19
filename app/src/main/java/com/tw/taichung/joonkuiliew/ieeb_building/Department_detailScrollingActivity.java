@@ -39,9 +39,11 @@ public class Department_detailScrollingActivity extends AppCompatActivity {
         //image text(title) set
         department_detail_imageView.setImageResource(now.getImgid());
         department_detail_textView.setText(now.getTitle());
+        department_detail_textView.setTextColor(0xff000000);
 
         //text set(content)
         dep_content = findViewById(R.id.dep_content);
         dep_content.setText(now.getIntroduct_dep());
+        dep_content.setTextColor(0xff000000);
     }
 }
