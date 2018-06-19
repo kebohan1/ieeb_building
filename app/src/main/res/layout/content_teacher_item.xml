@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/iv_l"
         android:layout_width="138dp"
         android:layout_height="84dp"
         android:layout_weight="1"
@@ -21,7 +21,10 @@
             android:id="@+id/teacher_name_textView"
             android:layout_width="match_parent"
             android:layout_height="43dp"
-            android:text="TextView" />
+            android:gravity="bottom"
+            android:paddingTop="10dp"
+            android:text="TextView"
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/teacher_department_textView"
