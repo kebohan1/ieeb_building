@@ -54,11 +54,11 @@ public class Introduction_detalActivity extends AppCompatActivity {
 
                 if(compoundButton.isChecked()){
                     Log.v("Switch_test","Open >_<");
-                    Toast.makeText(Introduction_detalActivity.this,"Open Night Mode",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Introduction_detalActivity.this,"Change !!!!",Toast.LENGTH_SHORT).show();
                     imageView_detal.setImageResource(now.getImgid_night());
                 } else{
                     Log.v("Switch_test","Close!!!!");
-                    Toast.makeText(Introduction_detalActivity.this,"Close Night Mode",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Introduction_detalActivity.this,"Revert @_@!",Toast.LENGTH_SHORT).show();
                     imageView_detal.setImageResource(now.getImgid());
                 }
             }

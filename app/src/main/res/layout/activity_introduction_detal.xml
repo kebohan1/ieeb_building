@@ -22,10 +22,10 @@
 
         <Switch
             android:id="@+id/nightmode_switch"
-            android:layout_width="143dp"
+            android:layout_width="154dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="夜間模式"
+            android:text="換張圖片?!"
             android:textSize="20sp" />
 
         <ImageView
