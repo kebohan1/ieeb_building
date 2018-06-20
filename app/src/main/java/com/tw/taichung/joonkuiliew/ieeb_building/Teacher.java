@@ -1,19 +1,26 @@
 package com.tw.taichung.joonkuiliew.ieeb_building;
 
 import android.graphics.Bitmap;
+import android.os.Parcel;
+import android.os.Parcelable;
 
-public class Teacher {
+import java.io.Serializable;
+
+public class Teacher implements Serializable {
     private String teacher_name;
     private String teacher_dep;
     private String tel;
     private String office;
     private String email;
+    private String jobs;
     private Bitmap img;
     private String[] skill;
     private Inexperiment[] experiment;
     private Education[] education;
 
-    public Teacher(String teacher_name, String teacher_dep,String tel,String office,String email,Bitmap img,String[] skill,Inexperiment[] newexperiment,Education[] education) {
+    private static final long serialVersionUID = 1L;
+
+    public Teacher(String teacher_name, String teacher_dep,String tel,String office,String email,Bitmap img,String[] skill,Inexperiment[] newexperiment,Education[] education,String jobs) {
         this.teacher_name = teacher_name;
         this.teacher_dep = teacher_dep;
         this.experiment = newexperiment;
@@ -23,6 +30,7 @@ public class Teacher {
         this.email = email;
         this.img = img;
         this.skill = skill;
+        this.jobs = jobs;
     }
 
     public String getTel() {
@@ -65,6 +73,10 @@ public class Teacher {
         this.skill = skill;
     }
 
+    public String getSkillbyone(int i) {
+        return skill[i];
+    }
+
     public String getTeacher_name() {
         return teacher_name;
     }
@@ -84,6 +96,9 @@ public class Teacher {
     public Inexperiment[] getExperiment() {
         return experiment;
     }
+    public Inexperiment getExperimentbyone(int i) {
+        return experiment[i];
+    }
 
     public void setExperiment(Inexperiment[] experiment) {
         this.experiment = experiment;
@@ -93,7 +108,15 @@ public class Teacher {
         return education;
     }
 
+    public Education getEducationbyone(int i) {
+        return education[i];
+    }
+
     public void setEducation(Education[] education) {
         this.education = education;
+    }
+
+    public String getJobs(){
+        return jobs;
     }
 }

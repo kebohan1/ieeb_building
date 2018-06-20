@@ -1,10 +1,12 @@
 package com.tw.taichung.joonkuiliew.ieeb_building;
 
-public class Education {
+import java.io.Serializable;
+
+public class Education implements Serializable {
     private String university;
     private String department;
     private String education;
-
+    private static final long serialVersionUID = 2L;
     public Education(){
 
     }

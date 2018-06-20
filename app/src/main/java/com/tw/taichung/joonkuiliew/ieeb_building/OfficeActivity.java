@@ -25,7 +25,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.Serializable;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -58,7 +60,17 @@ public class OfficeActivity extends AppCompatActivity {
                 ListView listView = (ListView) adapterView;
                 Intent intent = new Intent();
                 intent.setClass(OfficeActivity.this,TeacherActivity.class);
-                intent.putExtra("now_num",i);
+                Teacher send = teacher.get(i);
+                Bundle b = new Bundle();
+                b.putParcelable("bitmap", send.getImg());
+                b.putString("name",send.getTeacher_name());
+                b.putString("email",send.getEmail());
+                b.putString("tel",send.getTel());
+                b.putStringArray("skills",send.getSkill());
+                b.putString("office",send.getOffice());
+                b.putString("deparment",send.getTeacher_dep());
+                b.putString("jobs",send.getJobs());
+                intent.putExtras(b);
                 startActivity(intent);
             }
         });
@@ -112,10 +124,11 @@ public class OfficeActivity extends AppCompatActivity {
                 DataSnapshot tel = ds.child("tel");
                 DataSnapshot skill = ds.child("skill");
                 DataSnapshot educational = ds.child("educational");
-                DataSnapshot email = ds.child("email");
+                DataSnapshot email = ds.child("e-mail");
                 DataSnapshot office = ds.child("office");
                 DataSnapshot department = ds.child("department");
                 DataSnapshot inexperiment = ds.child("InExperiment");
+                DataSnapshot job = ds.child("job");
                 Education[] education = new Education[5];
                 int i=0;
                 for (DataSnapshot ds_a : educational.getChildren())
@@ -152,12 +165,13 @@ public class OfficeActivity extends AppCompatActivity {
                 String TeacherPic = (String) picture.getValue();
                 String TeacherTel = (String) tel.getValue();
                 String TeacherEmail = (String) email.getValue();
+                Log.d("test",TeacherEmail);
                 String TeacherOffice = (String) office.getValue();
                 String Teacherdepartment = (String) department.getValue();
                 Bitmap TeacherImg = getImgBitmap(TeacherPic);
-                Teacher item_Teacher = new Teacher(TeacherName,Teacherdepartment,TeacherTel,TeacherOffice,TeacherEmail,TeacherImg,skill_a,inexperiment1,education);
+                String jobs = (String)job.getValue();
+                Teacher item_Teacher = new Teacher(TeacherName,Teacherdepartment,TeacherTel,TeacherOffice,TeacherEmail,TeacherImg,skill_a,inexperiment1,education,jobs);
                 teacher.add(item_Teacher);
-                Log.v("Teacher", TeacherName + ";" + Teacherdepartment);
             }
             Message msg = new Message();
             msg.what = LIST_Teacher;
@@ -204,6 +218,9 @@ public class OfficeActivity extends AppCompatActivity {
             tv_name.setText(item.getTeacher_name());
             TextView tv_departmente = (TextView) itemlayout.findViewById(R.id.teacher_department_textView);
             tv_departmente.setText(item.getTeacher_dep());
+            ImageView iv_teacher = (ImageView) itemlayout.findViewById(R.id.iv_l);
+            //Log.d("img:",item.getImg().toString());
+            iv_teacher.setImageBitmap((item.getImg()));
             return itemlayout;
         }
     }

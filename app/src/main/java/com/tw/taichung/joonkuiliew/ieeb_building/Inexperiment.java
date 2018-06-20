@@ -1,9 +1,11 @@
 package com.tw.taichung.joonkuiliew.ieeb_building;
 
-public class Inexperiment {
+import java.io.Serializable;
+
+public class Inexperiment implements Serializable {
     private String department;
     private String jobs;
-
+    private static final long serialVersionUID = 3L;
     public Inexperiment(){
 
     }
