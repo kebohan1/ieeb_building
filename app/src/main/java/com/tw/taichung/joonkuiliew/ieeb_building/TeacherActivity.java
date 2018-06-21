@@ -93,7 +93,7 @@ public class TeacherActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent phone_intent = new Intent();
                 phone_intent.setAction(Intent.ACTION_CALL);
-                phone_intent.setData(Uri.parse("tel:0424517250"+tel));
+                phone_intent.setData(Uri.parse("tel:0424517250,"+tel.substring(1)));
                 startActivity(phone_intent);
             }
         });
